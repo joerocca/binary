@@ -9,6 +9,11 @@ pipeline {
     }
 
     stages {
+	stage('Clean Up') {
+	   steps {
+		sh 'rm -rf *'
+	   }
+	}
         stage('Build') {
             steps {
                 echo 'Building...'
