@@ -1,7 +1,6 @@
 #!/usr/bin/env groovy
 
 pipeline {
-
     agent {
     	dockerfile {
 	    args '-u root'
