@@ -29,8 +29,6 @@ class Binary:
     def __eq__(self, other):
         return int(self) == int(other)
     
-    # Binary Operations
-
     def __and__(self, other):
         return Binary(self._value & Binary(other)._value)
 
