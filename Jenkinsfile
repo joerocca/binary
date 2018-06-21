@@ -12,13 +12,13 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building...'
-                sh 'python binary.py'
+                sh 'python -B binary.py'
             }
         }
         stage('Test') {
             steps {
                 echo 'Testing...'
-                sh 'python -m pytest'
+                sh 'python -B -m pytest'
             }
         }
     }
